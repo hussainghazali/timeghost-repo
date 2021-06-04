@@ -1,1 +1,236 @@
-<router-outlet></router-outlet>
+<!--
+  -- TOGGLE LIGHT DARK MODE TAILLWIND CSS --
+-->
+
+
+<div class="w-full h-full flex flex-col justify-center items-center">
+
+    <div class="flex justify-center items-center mt-4">
+      <span class="">
+          <svg class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+      </span>
+  
+      <div class="w-14 h-7 flex items-center bg-gray-300 rounded-full mx-3 px-1 bg-blue-700" @click="">
+          <div class="bg-white w-5 h-5 rounded-full shadow-md transform translate-x-7"></div>
+      </div>
+      <span class="">
+          <svg class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+      </span>
+    </div>
+    </div>
+  
+  <!-- -- --------------------------------------------------------------- -->
+  
+  <!-- SPACING BETWEEN TOGGLE LIGHT DARK MODE AND DISPLAY TIME COMPONENT -->
+    
+    <div class="space-y-6 ...">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+  <!-- -- --------------------------------------------------------------- -->
+  
+  
+  
+  <div class="ml-80">
+  
+      <div class="align-middle inline-block shadow overflow-hidden bg-black shadow-dashboard px-8 pt-3 rectangle-bl-lg rectangle-br-lg">
+          <table class="table-fixed">
+              <thead>
+                  <tr>
+  
+                    <!-- SETTING UP THE DATE AND TIME CREDENTIALS -->
+  
+                      <th class="px-2 py-3 border-b-2 border-gray-900 text-left leading-4 text-gray-100 tracking-wider">Wednesday <br><br> Jun 2,2021</th>
+                     <!-- <th class="px-2 py-3 border-b-2 border-gray-900 text-left leading-4 text-gray-100 tracking-wider">01:00 <br><br></th>
+                  -->
+                  </tr>
+                  <br>
+              </thead>
+              <tbody class="bg-black">
+                      <tr>
+                          <td>
+                              <div class="space-x-4 ...">
+  
+                                  <div class="inline-block ...">
+                                      <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                          <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                          <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                          <span class="relative text-xs">Test 2</span>
+                                      </span>
+                                      </td>
+                                  </div>
+  
+                                  <div class="inline-block ...">
+                                      <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                          <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                          <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                          <span class="relative text-xs">Without Project</span>
+                                      </span>
+                                      </td>
+                                  </div>
+            
+                                    <div class="inline-block ...">
+                                        <td>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                                <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                                              </svg>
+                                            </td>
+                                    </div>
+            
+  
+                                  <div class="inline-block ...">
+                                      <td>
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                            </svg>
+                                          </td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg></td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                          <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                          <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                          <span class="relative text-xs">09:00 AM</span>
+                                      </span>
+                                      </td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td>
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                      </td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                          <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                          <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                          <span class="relative text-xs">10:00 AM</span>
+                                      </span>
+                                      </td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                          <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                          <span aria-hidden class="absolute inset-0 bg-gray-600 opacity-50 rectangle-full"></span>
+                                          <span class="relative text-xs">01:00</span>
+                                      </span>
+                                      </td>
+                                  </div>
+                                  <div class="inline-block ...">
+                                      <td> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                        </svg></td>
+                                  </div>
+                                </div>
+                          </td>
+  
+    
+                </tr>
+    
+  
+                <tr>
+                  <td>
+                      <div class="space-x-4 ...">
+  
+                          <div class="inline-block ...">
+                              <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                  <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                  <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                  <span class="relative text-xs">Test 2</span>
+                              </span>
+                              </td>
+                          </div>
+  
+                          <div class="inline-block ...">
+                              <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                  <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                  <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                  <span class="relative text-xs">Without Project</span>
+                              </span>
+                              </td>
+                          </div>
+    
+                            <div class="inline-block ...">
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                                      </svg>
+                                    </td>
+                            </div>
+    
+  
+                          <div class="inline-block ...">
+                              <td>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                  </td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg></td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                  <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                  <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                  <span class="relative text-xs">09:00 AM</span>
+                              </span>
+                              </td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="white">
+                                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                </svg>
+                              </td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                  <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                  <span aria-hidden class="absolute inset-0 bg-gray-800 opacity-50 rectangle-full"></span>
+                                  <span class="relative text-xs">10:00 AM</span>
+                              </span>
+                              </td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td class="space-x-0.2 whitespace-no-wrap border-b text-gray-100 border-gray-800 text-sm leading-5">
+                                  <span class="relative inline-block px-3 py-1 font-semibold text-gray-100 leading-tight">
+                                  <span aria-hidden class="absolute inset-0 bg-gray-600 opacity-50 rectangle-full"></span>
+                                  <span class="relative text-xs">01:00</span>
+                              </span>
+                              </td>
+                          </div>
+                          <div class="inline-block ...">
+                              <td> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                </svg></td>
+                          </div>
+                        </div>
+                  </td>
+  
+  
+        </tr>
+  
+  
+  
+                    
+              </tbody>
+          </table>
+    
+      </div>
+    </div>
+  
+                  <router-outlet></router-outlet>
